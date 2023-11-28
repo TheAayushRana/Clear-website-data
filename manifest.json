@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "clear-website-data",
+  "description": "extention for clearing cookies, local and session storage in one click",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/index.html"
+  }
+}
